@@ -36,12 +36,25 @@ const Home = () => {
             >
               About Us
             </Link>
+            <Link
+              to="/careers"
+              className="text-sm font-medium hover:text-primary"
+            >
+              Careers
+            </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Button variant="outline" size="sm">
-              Log In
+            <Button
+              variant="outline"
+              size="sm"
+              asChild
+              className="bg-pink-500 hover:bg-pink-600 text-white border-pink-500 hover:border-pink-600"
+            >
+              <Link to="/login">Log In</Link>
             </Button>
-            <Button size="sm">Sign Up</Button>
+            <Button size="sm" asChild>
+              <Link to="/login?tab=signup">Sign Up</Link>
+            </Button>
           </div>
         </div>
       </header>
@@ -278,9 +291,25 @@ const Home = () => {
               <h3 className="text-lg font-semibold mb-4">Company</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
+                  <Link to="/about" className="text-gray-400 hover:text-white">
                     About Us
-                  </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/testimonials"
+                    className="text-gray-400 hover:text-white"
+                  >
+                    Testimonials
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/careers"
+                    className="text-gray-400 hover:text-white"
+                  >
+                    Careers
+                  </Link>
                 </li>
                 <li>
                   <a href="#" className="text-gray-400 hover:text-white">
@@ -290,11 +319,6 @@ const Home = () => {
                 <li>
                   <a href="#" className="text-gray-400 hover:text-white">
                     Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Terms of Service
                   </a>
                 </li>
               </ul>
