@@ -52,7 +52,11 @@ const Home = () => {
             >
               <Link to="/login">Log In</Link>
             </Button>
-            <Button size="sm" asChild>
+            <Button
+              size="sm"
+              asChild
+              className="bg-pink-500 hover:bg-pink-600 text-white border-pink-500 hover:border-pink-600"
+            >
               <Link to="/login?tab=signup">Sign Up</Link>
             </Button>
           </div>
