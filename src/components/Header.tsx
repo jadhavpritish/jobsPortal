@@ -45,14 +45,14 @@ const Header = () => {
             variant="outline"
             size="sm"
             asChild
-            className="bg-blue-600 hover:bg-blue-700 text-white border-blue-600 hover:border-blue-700"
+            className="bg-pink-500 hover:bg-pink-600 text-white border-pink-500 hover:border-pink-600"
           >
             <Link to="/login">Log In</Link>
           </Button>
           <Button
             size="sm"
             asChild
-            className="bg-blue-600 hover:bg-blue-700 border-blue-600 hover:border-blue-700"
+            className="bg-pink-500 hover:bg-pink-600 text-white border-pink-500 hover:border-pink-600"
           >
             <Link to="/login?tab=signup">Sign Up</Link>
           </Button>
