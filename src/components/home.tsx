@@ -25,7 +25,10 @@ const Home = () => {
             your skills and career goals.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12">
-            <Button size="lg" className="gap-2">
+            <Button
+              size="lg"
+              className="gap-2 bg-pink-500 hover:bg-pink-400 text-white"
+            >
               <Search className="h-4 w-4" />
               Find Jobs
             </Button>
@@ -66,7 +69,9 @@ const Home = () => {
                   Find your dream job, track applications, and connect with
                   employers.
                 </p>
-                <Button>Browse Jobs</Button>
+                <Button className="bg-pink-500 hover:bg-pink-400 text-white">
+                  Browse Jobs
+                </Button>
               </CardContent>
             </Card>
             <Card className="hover:shadow-lg transition-shadow cursor-pointer">
